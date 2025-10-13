@@ -1,0 +1,36 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+int main() {
+	setlocale(0, "");
+
+	system("cls");
+	
+	int season;
+	
+
+	cout << "[ - ] Программа Времена года " << endl;
+	cout << "[1] Лето" << endl; 
+	cout << "[2] Осень" << endl;
+	cout << "[3] Зима" << endl;
+	cout << "[4] Весна" << endl;
+
+	cout << "[-] Введите значение : ";
+	cin >> season;
+
+	if (season == 1)
+		cout << "Лето... Довольно жаркая погода, надень что-нибудь полегче." << endl;
+	else if (season == 2)
+		cout << "Осень, следует одеться потеплее и взять с собой зонт." << endl;
+	else if (season == 3)
+		cout << "Зима, холодно, одевайся тепло." << endl;
+	else if (season == 4)
+		cout << "Весна, Пасха, можно быть налегке." << endl;
+	else
+		cout << "Неверный ввод!" << endl;
+
+
+	int _;
+	cin >> _; 
+	return 0;
+}
