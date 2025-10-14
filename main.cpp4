@@ -1,0 +1,30 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+int main() {
+	setlocale(0, "");
+
+	int number;
+	int i = 1;
+	int answer;
+
+	system("cls");
+
+	cout << "[+] Введите число:";
+
+	cin >> number;
+	while (i <= 9) {
+		cout << "[+] Решите пример: " << number << "*" << i << endl;
+		cout << "[+] Ответ:";
+		cin >> answer;
+		if (answer == number * i) {
+			cout << "Молодец" << endl;
+		}
+		else { cout << "Не-а;)";  break; }
+		i++;
+	}
+
+	int _;
+	cin >> _;
+	return 0;
+}
