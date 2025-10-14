@@ -1,0 +1,43 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+int main() {
+	setlocale(0, "");
+
+	double num1;
+	double num2;
+	int oper;
+	system("cls");
+
+	cout << "1)складывать			|     +\n2)вычитать			|     -\n3)умножать			|     *\n4)делить			|     /\n5)деление от остатка 		|     %\n" << endl;
+	cout << "Какую операцию соизволите приминить?:";
+	cin >> oper; 
+	cout << "Первая чиселка: ";
+	cin >> num1;
+	cout << "Вторая чиселка: ";
+	cin >> num2;
+	
+	if (oper == 1) {
+		cout << "Результат сложения: " << num1 + num2 << endl;}
+	else if (oper == 2) {
+		cout << "Результат вычитания: " << num1 - num2 << endl;}
+	else if (oper == 3) {
+		cout << "Произведение: " << num1 * num2 << endl;}
+	else if (oper == 4 && num2 !=0) {
+		cout << "Разность: " << num1 / num2 << endl;}
+	else if (oper == 5 && num2 !=0) {
+		cout << "Остаток равен: " << (int)num1 % (int)num2 << endl;}
+	
+	else {
+		cout << "Ошибка: Деление на ноль невозможно или Неверная операция. Поддерживаемые операции: +, -, *, /, %" << endl;
+	}
+
+
+
+
+
+
+	int _;
+	cin >> _;
+	return 0;
+}
