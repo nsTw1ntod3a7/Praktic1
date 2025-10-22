@@ -1,37 +1,33 @@
 #include <iostream>
 #include <windows.h>
 using namespace std;
+
 int main() {
-	setlocale(0, "");
+    setlocale(0, "");
 
-	int num;
-	system("cls");
+    int num;
+    system("cls");
 
-	cout << "[+] Введите число:";
+    cout << "[+] Введите число: ";
 
-	cin >> num;
-
-
-	if (num < 0) {
-		cout << "[+]Ошибка! Число меньше 0" << endl;
-	}
-	else if (num > 100) { cout << "[+]Ошибка! Число больше 100" << endl; }
-
-	else if (num <= 10) { cout << "[+] Цифра в диапазоне: 0-10" << endl; }
-	else if (num <= 21) { cout << "[+] Цифра в диапазоне: 11-20" << endl; }
-	else if (num <= 31) { cout << "[+] Цифра в диапазоне: 21-30" << endl; }
-	else if (num <= 40) { cout << "[+] Цифра в диапазоне: 31-40" << endl; }
-	else if (num <= 50) { cout << "[+] Цифра в диапазоне: 41-50" << endl; }
-	else if (num <= 60) { cout << "[+] Цифра в диапазоне: 51-60" << endl; }
-	else if (num <= 70) { cout << "[+] Цифра в диапазоне: 61-70" << endl; }
-	else if (num <= 80) { cout << "[+] Цифра в диапазоне: 71-80" << endl; }
-	else if (num <= 90) { cout << "[+] Цифра в диапазоне: 81-90" << endl; }
-	else if (num <= 100) { cout << "[+] Цифра в диапазоне: 91-100" << endl; }
-	else { cout << "[+]Неправильный ввод!" << endl; }
-
-
-
-	int _;
-	cin >> _;
-	return 0;
+    if (!(cin >> num)) {
+        cout << "[+] Ошибка! Введены нечисловые данные" << endl;
+    }
+        else if (num < 0) {cout << "[+] Ошибка! Число меньше 0" << endl;}
+        else if (num > 100) {cout << "[+] Ошибка! Число больше 100" << endl;}
+        else if (num <= 10) {cout << "[+] Цифра в диапазоне: 0-10" << endl;}
+        else if (num <= 20) {cout << "[+] Цифра в диапазоне: 11-20" << endl;}
+        else if (num <= 30) { cout << "[+] Цифра в диапазоне: 21-30" << endl;}
+        else if (num <= 40) {cout << "[+] Цифра в диапазоне: 31-40" << endl;}
+        else if (num <= 50) {cout << "[+] Цифра в диапазоне: 41-50" << endl; }
+        else if (num <= 60) { cout << "[+] Цифра в диапазоне: 51-60" << endl; }
+        else if (num <= 70) { cout << "[+] Цифра в диапазоне: 61-70" << endl; }
+        else if (num <= 80) { cout << "[+] Цифра в диапазоне: 71-80" << endl; }
+        else if (num <= 90) { cout << "[+] Цифра в диапазоне: 81-90" << endl; }
+        else if (num <= 100) { cout << "[+] Цифра в диапазоне: 91-100" << endl; }
+        else { cout << "Ошибочка где-то. O_o";}
+    
+        int _;
+        cin >> _;
+        return 0;
 }
