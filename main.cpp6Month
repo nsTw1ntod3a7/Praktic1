@@ -1,0 +1,44 @@
+#include <iostream>
+#include <windows.h>
+using namespace std;
+
+int main() {
+    setlocale(0,"");
+
+    int month;
+    
+   cout<< "[+]Месяца года: ";
+    cin >> month;
+  
+    switch (month) {
+    case 1:cout << "[1]Январь";
+        break;
+    case 2:cout << "[2]Февраль";
+        break;
+    case 3: cout << "[3]Март";
+        break;
+    case 4: cout << "[4]Апрель";
+        break;
+    case 5: cout << "[5]Май";
+        break;
+    case 6: cout << "[6]Июнь";
+        break;
+    case 7: cout << "[7]Июль";
+        break;
+    case 8: cout << "[8]Август";
+        break;
+    case 9: cout << "[9]Сентябрь";
+        break;
+    case 10: cout << "[10]Октябрь";
+        break;
+    case 11: cout << "[11]Ноябрь";
+        break;
+    case 12: cout << "[12]Декабрь";
+
+    default: cout << "Неправильный ввод месяца!"; break;
+    }
+
+    int _;
+    cin >> _;
+    return 0;
+}
